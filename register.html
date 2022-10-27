@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITY</title>
+</head>
+<body>
+    <div class="main">
+        <div class="name1">
+            <h1 class="h1main">CITY</h1>
+            <p class="pmain">Get Closer to Your Dreams.</p>
+        </div>
+        <div class="login1">
+            <div class="login">
+                <input class="email number" type="email" name="email" placeholder="Email or phone number" required>
+                <br>
+                <input class="password" type="password" name="password" placeholder="Password" required>
+                <br>
+                <input class="submit" type="submit" value="Log In">
+                <br>
+                <a class="a2" href="register1.html">Forgot Password?</a>
+                <br>
+                <h1 class="ht"></h1>
+                <br>
+                <p class="p2">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ <span class="span1">or</span> ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</p>
+                <div class="btt">
+                    <button id="myButton" class="button button1">Create new account</button>
+                </div>           
+            </div>
+            <p class="p1"><a class="a1" href="#">Create a Page</a> for a celebrity, brand or business.</p>
+        </div>
+    </div>
+    <script src="fc.js"></script>    
+</body>
+<style>
+    .ht{
+        display: none;
+        text-align: center;
+        color: red;
+    }
+    .p2{
+        color: rgb(196, 196, 196);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        display: none;
+    }
+    .span1{
+        color: rgb(99, 99, 99);
+        font-size: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .login1{
+        margin-top: 100px;
+    }
+    body{
+        background-color:rgb(187 185 221);
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+        padding-top: 150px;
+    }
+    .name1{
+        width: 500px;
+        padding-right: 150px;
+        padding-bottom: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    input:focus{
+        outline-color: rgb(103, 76, 164);
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    .login a:hover{
+        text-decoration: underline;
+    }
+    .login{
+        width:400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 1px solid rgb(196, 196, 196);
+        box-sizing: border-box;
+        border-radius: 2%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    }
+    .h1main{
+        font-size: 70px;
+        color: rgb(61, 36, 109);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    p{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .email,.password{
+        width: 350px;
+        height: 40px;
+        padding-left: 10px;
+        border-radius: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        border: 1px solid rgb(196, 196, 196);
+        font-size: 15px;
+    }
+    .submit{
+        width: 365px;
+        height: 35px;
+        background-color:rgb(98, 67, 162);
+        color:white;
+        border-radius: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        border: none;
+        font-size: 15px;
+    }
+    .a2{
+        color: rgb(0, 89, 255);
+        border-bottom: 1px solid rgb(196, 196, 196);
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 20px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .button{
+        width: 180px;
+        height: 40px;
+        background-color: rgb(21, 12, 57);
+        color: white;
+        border-radius: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        font-size: 15px;
+    }
+    .p1{
+        font-size: 17px;
+        text-align: center;
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .a1{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: black;
+    }
+    .btt{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .a1:hover{
+        text-decoration: underline;
+    }
+    @media screen and (max-width:1066px){
+        .h1main{
+            font-size: 60px;
+        }
+        .pmain{
+            font-size:25px;
+        }
+        .name1{
+            padding-right:0px;
+        }
+    }
+    @media screen and (max-width:916px){
+        .h1main{
+            text-align:center;
+            font-size: 30px;
+        }
+        .name1{
+            padding: 0;
+        }
+        .main{
+            padding: 0;
+        }
+        .login1{
+            margin-top:20px;
+            margin: 0;
+        }
+        .pmain{
+            display: none;
+        }
+        body{
+            background-color:rgb(187 185 221) !important;
+        }
+        .login{
+            border: none;
+            box-shadow: none;
+            padding: 0;
+        }
+        .email,.password{
+            background-color:rgb(245, 245, 245);
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);;
+        }
+        .submit{
+            height: 45px;
+            font-size: 20px;
+        }
+        .a2{
+            border-bottom: none;
+            padding: 0;
+        }
+        .p2{
+            display: flex;
+        }
+        .p1{
+            display: none;
+        }
+    }
+    @media screen and (max-width:410px){
+        .login{
+            width:300px;
+            margin: auto;
+        }
+        .email,.password{
+            width:250px;
+        }
+        .submit{
+            width: 265px;
+        }
+        .a2{
+            padding-right:20px;
+            padding-left: 20px;
+        }
+    }
+    @media screen and (max-width:300px){
+        .login{
+            width:210px;
+            margin: auto;
+        }
+        .email,.password{
+            width:160px;
+        }
+        .submit{
+            width: 175px;
+        }
+        .a2{
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+    }
+    @media screen and (max-width:250px){
+        .h1main{
+            font-size: 40px;
+        }
+    }
+</style>
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "register2.html";
+    };
+</script>
+</html>

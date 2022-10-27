@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITY</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="hh1">Sign Up</h1>
+        <p class="p1">It's quick and easy.</p>
+        <form class="form1" action="#">
+            <input class="input1 input11 firstname" type="text" placeholder="First name">
+            <input class="input1 input2 lastname" type="text" placeholder="Last name">
+        </form>
+        <form class="form2" action="#">
+            <input class="input1 input3 number" type="text" placeholder="Mobile number or email">
+            <input class="input1 input4 password" type="password" placeholder=" New password">
+            <input class="input1 input4 password1" type="password" placeholder=" Reenter password">
+        </form>
+        <p class="p2">Birthday</p>
+        <div class="aselect">
+        <select class="select1" name="Month">
+            <option></option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+        <select class="select2" name="Date">
+            <option value=""></option>
+        </select>
+        <select class="select3" name="Year">
+            <option value=""></option>
+        </select>
+        </div>
+        <p class="p3">Gender</p>
+        <form class="form3" action="#">
+            <select class="select4">
+                <option></option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <h1 class="hidden"></h1>
+        </form>
+        <input class="innn" type="text" placeholder="Secret word">
+        <p class="p4">By clicking Sign Up, you agree to our <span>Terms, Data Policy </span> and <span>Cookies Policy</span>. You may receive SMS Notifications from us and can opt out any time.</p>
+        <button class="save">Sign Up</button>
+    </div>
+    <script src="fc1.js"></script>   
+</body>
+<style>
+    .innn{
+        margin-left: 5px;
+        width: 350px;
+        margin-top: 10px;
+    }
+    .select4{
+        width:375px;
+    }
+    .hidden{
+        color:red;
+        text-align:center;
+        display: none;
+        font-size: 18px;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    input,select:focus{
+        outline-color: rgb(0, 89, 255);
+    }
+    body{
+        background-color:rgb(145, 145, 211);
+    }
+    .aselect{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;       
+    }
+    .main{
+        width: 385px;
+        margin: auto;
+        margin-top: 200px;
+        border: 1px solid rgb(187, 187, 187);
+        padding: 15px;
+        padding-bottom: 25px;
+        border-radius:6px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    }
+    .p1{
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    p,h1,input,option,button,select{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .hh1{
+        margin: 0
+    }
+    input{
+        border: none;
+        border: 1px solid rgb(221, 221, 221);        
+    }
+    .input1,.innn{
+        padding: 10px;
+        background-color: rgb(240, 240, 240);
+        border-radius: 6px;
+    }
+    .form1{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .form2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .input1,.input2{
+        margin-top:10px;
+    }
+    .input2{
+        margin-left:5px;
+    }
+    .input1,.innn{
+        margin-right: 5px;
+    }
+    .p2,.p3{
+        font-size: 13px;
+        color: gray;
+        margin: 0;
+        padding-top: 20px;
+    }
+    .p3{
+        padding-bottom: 10px;
+    }
+    .select1{
+        padding-right: 43px;
+    }
+    .select2{
+        padding-right: 80px;
+    }
+    .select3{
+        padding-right: 63px;
+    }
+    select{
+        border: none;
+        border: 1px solid rgb(187, 187, 187);
+        border-radius:6px;
+        margin: 4px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 5px;
+        width: 120px;
+    }
+    .input11,.input2{
+        margin-top: 20px;
+    }
+    .input6,.input7{
+        margin-left:16%;
+        display: inline-block;
+        border: 1px solid rgb(187, 187, 187);
+    }
+    .input7{
+        margin-left:19%;
+    }
+    .p4{
+        color: gray;
+        font-size: 10.5px;        
+    }
+    button{
+        padding: 7px;
+        padding-left: 60px;
+        padding-right: 60px;
+        color: white;
+        background-color: rgb(63, 24, 97);
+        font-size: 20px;
+        border: none;
+        border-radius: 6px;
+        margin-left: 90px;
+        margin-top: 10px;
+    }
+    span{
+        color: rgb(49, 37, 156);
+    }
+    h1,p{
+        padding-left: 5px;
+    }
+    .form1{
+        border-top: 1px solid rgb(187, 187, 187);
+    }
+</style>
+</html>
